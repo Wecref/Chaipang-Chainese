@@ -5,6 +5,7 @@
 @import url(waveLine.css);
 @import url(decoration.css);
 
+
 html,
 body {
     margin: 0px;
@@ -152,7 +153,6 @@ nav>.navbar_menu>li>a {
 .content_2_title {
     display: flex;
     justify-content: center;
-    flex: auto;
 }
 
 .content_2_title>img:first-child {
@@ -459,4 +459,137 @@ footer {
 .address>div>span>span{
     font-size: 15px;
     color: #b2b2b2;
+}
+
+@media screen and (max-width: 600px) {
+    .waveLine_nomal {
+        height: 20px;
+        margin-bottom: -1px;
+    }
+
+    nav>img {
+        width: 139.5;
+        height: 37px;
+        margin: var(--phone-nav-margin);
+    }
+    nav>.navbar_menu>li>a {
+        visibility: hidden;
+    }
+
+    .content_container {
+        padding-top: 10%;
+    }
+
+    .content_1_character {
+        margin-top: 0px;
+    }
+
+    .content_1_character > img{
+        margin-top: 1%;
+    }
+    
+    .content_1_info .content_1_info_nomal_text {
+        font-size: 15px;
+        margin-top: 50px;
+    }
+
+    .content_1_info .content_1_info_big_text {
+        font-size: 30px;
+        margin: 0px 0px;
+        margin-bottom: 30px;
+    }
+
+    .content_1_info .content_1_store_link li a {
+        border: 2px solid white;
+        background-color: #42BFFE;
+        border-radius: 5px;
+        padding: 4px 10px;
+    }
+
+    .content_2_title>img:first-child {
+        width: 36px;
+        height: 60px;
+    }
+    
+    .content_2_title>img:last-child {
+        width: 19.5px;
+        height: 20px;
+    }
+
+    .content_2_title>p {
+        font-size: 20px;
+    }
+    .content_2_nomal_text {
+        font-size: 15px;
+        line-height: 150%;
+    }
+
+    .content_2_img_info {
+        width: 230px;
+    }
+
+    .content_2_img_info>img {
+        width: 250px;
+        height: 225px;
+        margin-top: -50%;
+        margin-bottom: 60%;
+    }   
+
+
+    .content_3_title>img:first-child {
+        width: 36px;
+        height: 60px;
+    }
+    
+    .content_3_title>img:last-child {
+        width: 19.5px;
+        height: 20px;
+    }
+    .content_3_title>p {
+        font-size: 20px;
+    }
+    .content_3_nomal_text {
+        font-size: 15px;
+        line-height: 150%;
+    }
+
+    .content_3_img_info {
+        width: 220px;
+    }
+
+    .content_3_img_info>img {
+        width: 210px;
+        height: 149.5px;
+        margin-top: -50%;
+        margin-bottom: 60%;
+    }   
+
+    .content_4_title>img:first-child {
+        width: 36px;
+        height: 60px;
+    }
+    
+    .content_4_title>img:last-child {
+        width: 19.5px;
+        height: 20px;
+    }
+    .content_4_title>p {
+        font-size: 20px;
+    }
+    .content_4_nomal_text {
+        font-size: 15px;
+        line-height: 150%;
+        margin-top: 10px;
+    }
+
+    .content_4_img_info {
+        width: 220px;
+    }
+
+    .content_4_img_info>img {
+        width: 297.5px;
+        height: 198px;
+    
+        margin-top: 10%;
+    }
 }

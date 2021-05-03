@@ -44,3 +44,15 @@
 .deco_finn_container{
     margin-top: -800px;
 }
+
+@media screen and (max-width: 600px) {
+    .deco_left_container{
+        display: none;
+    }
+    .deco_right_container{
+        display: none;
+    }
+    .deco_empty_container{
+        display: none;
+    }
+}
