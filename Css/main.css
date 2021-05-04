@@ -334,20 +334,20 @@ nav>.navbar_menu>li>a {
     width: 100%;
     text-align: center;
 }
-.content_5_text_info>div>img{
+.wecref_logo{
     width: 490px;
     height: auto;
 }
 .wecref_logo_info{
     font-family: "NanumSquare_acEB";
-    font-size: 30px;
     color: #686868;
     text-align: center;
     margin-top: 30px;
     margin-bottom: 100px;
-    font-size: 1.5em;
+    font-size: 30px;
 }
 .wecref_logo_info>span{
+    
     color: #00cfc7;
 }
 .wecref_info{
@@ -466,14 +466,14 @@ footer {
         height: 20px;
         margin-bottom: -1px;
     }
-
+   
     nav>img {
-        width: 139.5;
+        width: 139.5px;
         height: 37px;
         margin: var(--phone-nav-margin);
     }
-    nav>.navbar_menu>li>a {
-        visibility: hidden;
+    nav>.navbar_menu {
+        display: none;
     }
 
     .content_container {
@@ -591,5 +591,24 @@ footer {
         height: 198px;
     
         margin-top: 10%;
+    }
+
+    /* content 5 */
+    .wecref_logo{
+        width: 245px;
+    }
+    .wecref_logo_info{
+        font-size: 15px;
+    }
+    .wecref_info{
+        font-size: 12.5px;
+    }
+    .content_5_face_icon>img{
+        width: 59.5px;
+        height: 60px;
+    }
+
+    footer{
+        display: none;
     }
 }
