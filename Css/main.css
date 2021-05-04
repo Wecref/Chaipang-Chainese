@@ -525,7 +525,7 @@ footer {
     }
 
     .content_2_img_info {
-        width: 230px;
+        width: 250px;
     }
 
     .content_2_img_info>img {
@@ -554,7 +554,7 @@ footer {
     }
 
     .content_3_img_info {
-        width: 220px;
+        width: 210px;
     }
 
     .content_3_img_info>img {
@@ -587,8 +587,10 @@ footer {
     }
 
     .content_4_img_info>img {
-        width: 297.5px;
-        height: 198px;
+        /* width: 297.5px; */
+        /* height: 198px; */
+        width: 350px;
+        height: auto;
     
         margin-top: 10%;
     }
