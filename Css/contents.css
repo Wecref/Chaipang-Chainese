@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+.contents_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: center / contain repeat;
+    background-position: top;
+
+    padding-top: 15%;
+}
+
+.contents_row_container {
+    display: flex;
+}
+
+.contents_container .info_layout {
+    font-family: "NanumSquare_acB";
+    color: var(--color-white);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contents_container .info_layout .info_texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: flex-end; */
+}
+
+.contents_container .info_layout .info_texts .nomal_text {
+    font-size: 29px;
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 15px;
+}
+
+.contents_container .info_layout .info_texts .big_text{
+    font-size: 60px;
+    margin:0px;
+    margin-bottom: 60px;
+}
+
+.contents_container .info_layout .store_link_layout {
+    display: flex;
+    height: 100%;
+}
+
+.contents_container .info_layout .store_link_layout li {
+    list-style-type: none;
+    margin: 0px 10px;
+}
+
+.contents_container .info_layout .store_link_layout li a {
+    text-decoration: none;
+    color: var(--color-white);
+    border: 2px solid white;
+    background-color: #42BFFE;
+    border-radius: 5px;
+    padding: 10px 40px;
+}
+
+.contents_container .info_deco_layout {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10%;
+}    
+
+.contents_container .info_deco_layout .deco_title {
+    display: flex;
+    justify-content: center;
+}
+
+.contents_container .info_deco_layout .deco_title img:first-child {
+    width: 72px;
+    height: 120px;
+}
+
+.contents_container .info_deco_layout .deco_title img:last-child {
+    width: 39px;
+    height: 40px;
+}
+
+.contents_container .info_deco_layout .deco_title .big_text{
+    font-family: "NanumSquare_acEB";
+    font-size: 75px;
+    color: #5F1AA8;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contents_container .info_deco_layout .nomal_text{
+    font-family: "NanumSquare_acB";
+    font-size: 35px;
+    color: #B480FF;
+    margin: 0px 0px;
+    text-align: center;
+
+    line-height: 150%;
+}
+
+.contents_container .info_deco_layout .nomal_text span {
+    color: #FF80C7;
+}
+
+.contents_imgs_info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    /* width: 1200px; */
+    width: 60vw;
+    max-width: 1200px;
+}

@@ -1,5 +1,7 @@
+@charset "UTF-8";
+
 .waveLine_nomal {
-    width: 100%;
-    height: 90px;
+    width: 100vw;
+    height: 60px;
     background: center / contain repeat;
 }
