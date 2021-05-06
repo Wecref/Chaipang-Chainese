@@ -8,15 +8,13 @@
     background: center / contain repeat;
     background-position: top;
 
-    padding-top: 15%;
+    padding-top: 15%;    
 }
 
 .contents_row_container {
     display: flex;
 }
-.contents_container>img{
-    width: 100vw;
-}
+
 .contents_container .info_layout {
     font-family: "NanumSquare_acB";
     color: var(--color-white);
