@@ -32,14 +32,14 @@
 }
 
 .contents_container .info_layout .info_texts .nomal_text {
-    font-size: 29px;
+    font-size: 30px;
     text-align: center;
     margin: 0px;
     margin-bottom: 15px;
 }
 
 .contents_container .info_layout .info_texts .big_text{
-    font-size: 60px;
+    font-size: 65px;
     margin:0px;
     margin-bottom: 60px;
 }
