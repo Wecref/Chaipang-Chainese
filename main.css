@@ -122,6 +122,10 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
+    .waveLine_nomal {
+        height: 40px;
+    }
+
     .nav_container{
         flex-direction: column;
     }
@@ -240,7 +244,9 @@ body {
 }
 
 @media screen and (max-width: 700px) {
-    
+    .waveLine_nomal {
+        height: 20px;
+    }
     .contents_container .info_deco_layout .deco_title img:first-child {
         width: 18px;
         height: 30px;
