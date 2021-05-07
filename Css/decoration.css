@@ -16,14 +16,12 @@
     padding-left: 1vw;
 }
 
-/* .deco_left_container img {
-    width: 209px;
-    height: auto;
+.deco_left_container img {
+    width: 100%;
 }
 .deco_right_container img{
-    width: 209px;
-    height: auto;
-} */
+    width: 100%;
+}
 
 .deco_mico_container{
     flex-grow: 2;

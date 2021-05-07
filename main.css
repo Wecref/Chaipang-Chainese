@@ -185,13 +185,6 @@ body {
         margin-bottom: 10px;
     }
 
-    .deco_left_container{
-        display: none;
-    }
-    
-    .deco_right_container{
-        display: none;
-    }
     #content1.contents_container.active {
         padding-top: 35%;
     }
@@ -215,6 +208,12 @@ body {
     }
     #content4 .info_deco_layout .deco_title .big_text {
         letter-spacing: 0px;
+    }
+    #content4 .deco_left_container{
+        display: none;
+    }
+    #content4 .deco_right_container{
+        display: none;
     }
 
     #content5 .info_layout {
@@ -323,6 +322,14 @@ body {
     .nav_container>.nav_logo {
         width: 139.5px;
         height: 37px;
+    }
+
+    .deco_left_container{
+        display: none;
+    }
+    
+    .deco_right_container{
+        display: none;
     }
 
     
