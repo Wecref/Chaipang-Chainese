@@ -22,7 +22,7 @@
     margin: var(--nav-container-margin);
 }
 
-.nav_container > .nav_menu {
+.nav_menu {
     display: flex;
     margin: 0px;
     padding: 0px;
@@ -44,4 +44,13 @@
     text-decoration: none;
     color: var(--color-white);
     font-size: 20px;
+}
+
+.nav_container .nav_toogleBtn {
+    display: none;
+}
+
+.nav_menu_icon.active,
+.nav_menu.active {
+    display: flex;
 }
