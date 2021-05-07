@@ -40,6 +40,7 @@ body {
 
 #content3 .info_deco_layout .deco_title .big_text {
     color: var(--color-white);
+    letter-spacing: 1.5px;
 }
 
 #content3 .info_deco_layout .nomal_text {
@@ -51,7 +52,7 @@ body {
 #content4 .info_deco_layout .deco_title .big_text {
     color: var(--color-white);
     line-height: 150%;
-    letter-spacing: 1.5px;
+    letter-spacing: 2px;
 }
 
 #content4 .info_deco_layout .nomal_text {
