@@ -38,18 +38,8 @@
     margin: 0px;
     margin-bottom: 15px;
     line-height: 150%;
-    letter-spacing: 3px;
+    letter-spacing: 1.5px;
 }
-
-/* .contents_container .info_deco_layout .nomal_text{
-    font-family: "NanumSquare_acB";
-    font-size: 30px;
-    color: #B480FF;
-    margin: 0px 0px;
-    text-align: center;
-
-    line-height: 150%;
-} */
 
 .contents_container .info_layout .info_texts .big_text{
     font-size: 65px;

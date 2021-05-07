@@ -45,13 +45,13 @@ body {
 #content3 .info_deco_layout .nomal_text {
     color: #DBC0FF;
     line-height: 150%;
-    letter-spacing: 3px;
+    letter-spacing: 1.5px;
 }
 
 #content4 .info_deco_layout .deco_title .big_text {
     color: var(--color-white);
     line-height: 150%;
-    letter-spacing: 3px;
+    letter-spacing: 1.5px;
 }
 
 #content4 .info_deco_layout .nomal_text {
