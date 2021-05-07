@@ -44,16 +44,21 @@ body {
 
 #content3 .info_deco_layout .nomal_text {
     color: #DBC0FF;
+    line-height: 150%;
+    letter-spacing: 3px;
 }
 
 #content4 .info_deco_layout .deco_title .big_text {
     color: var(--color-white);
+    line-height: 150%;
+    letter-spacing: 3px;
 }
 
 #content4 .info_deco_layout .nomal_text {
     color: #C7FFF8;
     font-size: 25px;
     margin: 50px 0px;
+
 }
 
 #content4 .info_deco_layout .nomal_text p {
