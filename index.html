@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chaipang Chainese</title>
+    <title data-lang="title">[title]</title>
 
     <link rel="stylesheet" href="main.css">
 </head>
@@ -16,23 +16,23 @@
     <nav class="nav_container">
         <img class="nav_logo" src="img/Asset 1.png" alt="차이팡 로고">
         <ul class="nav_menu">
-            <li><a href="#content2">특징 및 구성</a></li>
-            <li><a href="#content3">이용방법</a></li>
-            <li><a href="#content4">차이팡친구들</a></li>
-            <li><a href="#content5">회사소개</a></li>
+            <li><a href="#content2" data-lang="composition">[composition]</a></li>
+            <li><a href="#content3" data-lang="howEnjoy">[howEnjoy]</a></li>
+            <li><a href="#content4" data-lang="cFriends">[cFriends]</a></li>
+            <li><a href="#content5" data-lang="company">[company]</a></li>
         </ul>
         <a href="#" class="nav_toogleBtn">
             <img class="nav_menu_icon" src="img/list_white_48dp.svg" alt="메뉴 아이콘">
         </a>
-        <script src="main.js" defer></script>
+        <script type="module" src="main.js" defer></script>
     </nav>
-
     <!-- content - 1 -->
     <section id="content1" class="contents_container" style="background-image: url(img/new/Website_1-1.png);">
         <div class="info_layout">
             <div class="info_texts">                
-                <p class="nomal_text">노래하고 춤추면 성조와 발음이 저절로!<br>아이들이 바로 말 할 수 있는</p>
-                <p class="big_text">차이팡 중국어</p>
+                <button id="btn-en">English</button> <button id="btn-ko">한국어</button>
+                <p class="nomal_text"><span data-lang="content1_info1">[content1_info1]</span><br><span data-lang="content1_info2">[content1_info2]</span></p>
+                <p class="big_text" data-lang="title">[title]</p>
             </div>
             <ui class="store_link_layout">
                 <li class=""><a href="">Google Play</a></li>
@@ -42,7 +42,6 @@
         <img src="img/Asset 4.png" alt="">
         <div class="waveLine_nomal" style="background-image: url(../img/new/Asset\ 44.png); margin-top: -10%;"></div>
     </section>
-
     <!-- content - 2 -->
     <section id="content2" class="contents_container" style="background-image: url(img/new/Website_1-2.png);">
         <div class="contents_row_container">
@@ -55,13 +54,13 @@
                 <div class="info_deco_layout">
                     <div class="deco_title">
                         <img src="img/Asset 5.png" alt="">
-                        <p class="big_text">환상의 세계에서 신나게 놀아요!</p>
+                        <p class="big_text" data-lang="content2_title">[content2_title]</p>
                         <img src="img/Asset 6.png" alt="">
 
                     </div>
                     <p class="nomal_text">
-                        <span>'차이팡 친구들'</span> 과 함께라면<br>
-                        외워서 공부하지 않아도 바로 중국어를 말할 수 있어요!
+                        <span data-lang="content2_info0">[content2_info0]</span><span class="focusColor1" data-lang="content2_info1">[content2_info1]</span> <span data-lang="content2_info2">[content2_info2]</span><br>
+                        <span data-lang="content2_info3">[content2_info3]</span>
                     </p>
                 </div>
 
@@ -92,11 +91,11 @@
                 <div class="info_deco_layout">
                     <div class="deco_title">
                         <img src="img/Asset 5.png" alt="">
-                        <p class="big_text">차이팡 친구들과 함께!</p>
+                        <p class="big_text" data-lang="content3_title">[content3_title]</p>
                         <img src="img/Asset 6.png" alt="">
                     </div>
                     <p class="nomal_text">
-                        <span>차이팡 중국어</span>를 즐기는 방법
+                        <span data-lang="content3_info0">[content3_info0]</span><span class="focusColor1" data-lang="title">[title]</span><span data-lang="content3_info1">[content3_info0]</span>
                     </p>
                 </div>
 
@@ -131,13 +130,13 @@
                 <div class="info_deco_layout">
                     <div class="deco_title">
                         <img src="img/Asset 22.png" alt="">
-                        <p class="big_text">환상의 세계 속<br>차이팡 친구들을 소개합니다!</p>
+                        <p class="big_text"><span data-lang="content4_title1">[content4_title1]</span><br><span data-lang="content4_title2">[content4_title2]</span></p>
                         <img src="img/Asset 23.png" alt="">
                     </div>
                     <div class="nomal_text">
-                        <p><span>'1단계'</span>에서는 유니콘, <span>콘지와 말코</span></p>
-                        <p><span>'2단계'</span>에서는 드래곤, <span>도라와 곤</span></p>
-                        <p><span>'3단계'</span>에서는 인어, <span>가비와 핀</span>을 만나요!</p>
+                        <p><span data-lang="content4_info1_1">[content4_info1_1]</span><span class="focusColor2" data-lang="content4_info1_2">[content4_info1_2]</span><span data-lang="content4_info1_3">[content4_info1_3]</span><span class="focusColor2" data-lang="content4_info1_4">[content4_info1_4]</span></p>
+                        <p><span data-lang="content4_info2_1">[content4_info2_1]</span><span class="focusColor2" data-lang="content4_info2_2">[content4_info2_2]</span><span data-lang="content4_info2_3">[content4_info2_3]</span><span class="focusColor2" data-lang="content4_info2_4">[content4_info2_4]</span></p>
+                        <p><span data-lang="content4_info3_1">[content4_info3_1]</span><span class="focusColor2" data-lang="content4_info3_2">[content4_info3_2]</span><span data-lang="content4_info3_3">[content4_info3_3]</span><span class="focusColor2" data-lang="content4_info3_4">[content4_info3_4]</span><span data-lang="content4_info3_5">[content4_info3_5]</span></p>
                     </div>
                     <img src="img/Asset 43.png" alt="">
                 </div>
@@ -157,9 +156,10 @@
                 <span>We cre</span>ate a <span>F</span>antasy World for Children around the world
             </span>
             <span class="nomal_text">
-                <span>(주)위크리프는 전 세계 어린이들을 위한 <br>환상의 세계를 만드는 에듀테크 기업입니다.</span>
-                <span>'안전하고 유익한' 콘텐츠를 제공하여, <br>온라인과 오프라인 환경 모두에서 아이들을 위한 <br>환상의 세계를 만들기 위해 노력합니다.</span>
-                <span>'차이팡 친구들' 캐릭터와 함께 하는 <br>교육 콘텐츠를 제작하고, 2021년 3월 <br>주력 서비스인 '차이팡 중국어'를 런칭하였습니다.</span>
+                <span><span data-lang="content5_info1">[content5_info1]</span><br><span data-lang="content5_info2">[content5_info2]</span></span>
+                <span><span data-lang="content5_info3">[content5_info3]</span><br><span data-lang="content5_info4">[content5_info4]</span><br><span data-lang="content5_info5">[content5_info5]</span></span>
+                <span><span data-lang="content5_info6">[content5_info6]</span><br><span data-lang="content5_info7">[content5_info7]</span><br><span data-lang="content5_info8">[content5_info8]</span></span>
+                <span data-lang="content5_info9">[content5_info9]</span>
             </span>
         </div>
         <div class="contents_imgs_info">

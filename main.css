@@ -20,6 +20,13 @@ body {
     margin: 0px;
 }
 
+.focusColor1 {
+    color: #FF80C7;
+}
+.focusColor2 {
+    color: yellow;
+}
+
 #content1>img {
     width: 100%;
     max-width: 1900px;
@@ -64,10 +71,6 @@ body {
 
 #content4 .info_deco_layout .nomal_text p {
     margin: 15px 0px;
-}
-
-#content4 .info_deco_layout .nomal_text span {
-    color: yellow;
 }
 
 #content4 .info_deco_layout>img {
