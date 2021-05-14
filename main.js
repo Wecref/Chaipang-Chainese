@@ -68,8 +68,10 @@ const lang = {
         CEO_number: "T: ",
         address_title: "",
         address: "4F, 562, Nonhyeon-ro, Gangnam-gu, Seoul, Republic of Korea",
-        business_no_title: "Business registration number. ",
+        business_no_title: "Business registration no. ",
         CEO: "Wecref Co., Ltd. CEO: PARK, Jeongyeon",
+        email: "E: ",
+        mail_order_sales: "Mail-order-sales registration no. "
     },
     ko: {
         title: "차이팡 중국어",
@@ -115,10 +117,12 @@ const lang = {
         Facebook: "페이스북",
         Youtube: "유튜브",
         CEO_number: "대표전화: ",
-        address_title: "주소 ",
+        address_title: "주소: ",
         address: "서울특별시 강남구 논현로 562, 4층 (역삼동, 아리지빌딩)",
-        business_no_title: "사업자등록번호 ",
+        business_no_title: "사업자등록번호: ",
         CEO: "(주)위크리프 대표이사 박정연",
+        email: "이메일: ",
+        mail_order_sales: "통신판매업신고번호: "
     }
 };
 // 초기 작업
