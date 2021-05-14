@@ -199,6 +199,12 @@ body {
     #content1 .info_texts .big_text {
         font-size: 40px;
     }
+
+    .store_link_layout img {
+        width: 156px;
+        height: 48.75px;
+    }
+
     #content3 .info_deco_layout .deco_title .big_text {
         letter-spacing: 0px;
     }
@@ -336,6 +342,8 @@ body {
     }
 
     
+
+    
     #content1.contents_container {
         padding-top: 30%;
     }
@@ -359,11 +367,12 @@ body {
     }
     #content1 .info_layout .store_link_layout li {
         margin: 0px;
-        margin: 0px 10px 0px 10px;
+        margin: 0px 10px;
     }
 
-    #content1 .info_layout .store_link_layout li a{
-        padding: 2.5px 15px;
+    #content1 .store_link_layout img {
+        width: 104px;
+        height: 32.5px;
     }
 
     #content2 .contents_imgs_info img {

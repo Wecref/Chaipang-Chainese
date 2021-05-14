@@ -80,7 +80,7 @@ footer {
     height: 61px;
 }
 
-.address>div>span>span{
+.address>div>span>span:last-child{
     font-size: 15px;
     color: #b2b2b2;
 }

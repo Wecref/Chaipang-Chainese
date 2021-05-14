@@ -11,6 +11,16 @@ toggleBtn.addEventListener('click', ()=>{
 });
 
 // 사이트 언어 관련
+const myEnum = {
+    korean: "ko",
+    english: "en"
+};
+
+const config = {
+    koImgPath: "img/",
+    enImgPath: "img/en/"
+};
+
 const lang = {
     en: {
         title: "Chaipang Chinese",
@@ -19,7 +29,7 @@ const lang = {
         cFriends: "Chaipang friends",
         company: "Company",
         content1_info1: "Learn Chinese tones and pronunciation naturally while singing and dancing!",
-        content1_info2: "where children can learn straight away.",
+        content1_info2: "Children can speak Chinese right away.",
         content2_title: "Have fun in a fantasy world!",
         content2_info0: "With ",
         content2_info1: "“Chaipang Friends”",
@@ -52,6 +62,14 @@ const lang = {
         content5_info7: "",
         content5_info8: "",
         content5_info9: "In March 2021, we launched our flagship service 'Chaipang Chinese'.",
+        Instagram: "● Instagram",
+        Facebook: "● Facebook",
+        Youtube: "● Youtube",
+        CEO_number: "T: ",
+        address_title: "",
+        address: "4F, 562, Nonhyeon-ro, Gangnam-gu, Seoul, Republic of Korea",
+        business_no_title: "Business registration number. ",
+        CEO: "Wecref Co., Ltd. CEO: PARK, Jeongyeon",
     },
     ko: {
         title: "차이팡 중국어",
@@ -93,26 +111,117 @@ const lang = {
         content5_info7: "교육 콘텐츠를 제작하고, 2021년 3월 ",
         content5_info8: "주력 서비스인 '차이팡 중국어'를 런칭하였습니다.",
         content5_info9: "",
+        Instagram: "● 인스타그램",
+        Facebook: "● 페이스북",
+        Youtube: "● 유튜브",
+        CEO_number: "대표전화: ",
+        address_title: "주소 ",
+        address: "서울특별시 강남구 논현로 562, 4층 (역삼동, 아리지빌딩)",
+        business_no_title: "사업자등록번호 ",
+        CEO: "(주)위크리프 대표이사 박정연",
     }
 };
 // 초기 작업
 const currentLang = getLanguage();
-render(currentLang.substr(0, 2));
+Render(currentLang.substr(0, 2));
+
 
 // 버튼 이벤트
-document.getElementById("btn-en").addEventListener("click", e => {
-    render("en");
-});
-document.getElementById("btn-ko").addEventListener("click", e => {
-    render("ko");
-});
+// document.getElementById("btn-en").addEventListener("click", e => {
+//     Render("en");
+// });
+// document.getElementById("btn-ko").addEventListener("click", e => {
+//     Render("ko");
+// });
 function getLanguage() {
     return navigator.language || navigator.userLanguage;
 };
-function render(locale) {
+
+function Render(locale){
+    TextRender(locale);
+    ImgRender(locale);
+}
+
+function TextRender(locale) {
     const $lang = document.querySelectorAll("[data-lang]")
     $lang.forEach(el => {
         const code = el.dataset.lang
         el.textContent = lang[locale][code]
     });
 };
+
+function ImgRender(locale){
+    const imgSrcMap = GetImgMap();
+
+    const $img_num = document.querySelectorAll("[data-img]")
+    $img_num.forEach(el => {
+        el.src = imgSrcMap.get(locale+el.dataset.img);
+        console.log();
+    });
+
+function GetImgMap(){
+    const imgSrcMap = new Map();
+    // content2
+    imgSrcMap.set('ko1', GetImgPath(myEnum.korean, 'Asset 7.png'));
+    imgSrcMap.set('ko2', GetImgPath(myEnum.korean, 'Asset 8.png'));
+    imgSrcMap.set('ko3', GetImgPath(myEnum.korean, 'Asset 9.png'));
+    imgSrcMap.set('ko4', GetImgPath(myEnum.korean, 'Asset 10.png'));
+    imgSrcMap.set('ko5', GetImgPath(myEnum.korean, 'Asset 11.png'));
+    imgSrcMap.set('ko6', GetImgPath(myEnum.korean, 'Asset 12.png'));
+    imgSrcMap.set('en1', GetImgPath(myEnum.english,'Asset 83.png'));
+    imgSrcMap.set('en2', GetImgPath(myEnum.english,'Asset 84.png'));
+    imgSrcMap.set('en3', GetImgPath(myEnum.english,'Asset 85.png'));
+    imgSrcMap.set('en4', GetImgPath(myEnum.english,'Asset 86.png'));
+    imgSrcMap.set('en5', GetImgPath(myEnum.english,'Asset 87.png'));
+    imgSrcMap.set('en6', GetImgPath(myEnum.english,'Asset 88.png'));
+    // content3
+    imgSrcMap.set('ko7', GetImgPath(myEnum.korean, 'Asset 13.png'));
+    imgSrcMap.set('ko8', GetImgPath(myEnum.korean, 'Asset 14.png'));
+    imgSrcMap.set('ko9', GetImgPath(myEnum.korean, 'Asset 15.png'));
+    imgSrcMap.set('ko10', GetImgPath(myEnum.korean, 'Asset 16.png'));
+    imgSrcMap.set('ko11', GetImgPath(myEnum.korean, 'Asset 17.png'));
+    imgSrcMap.set('ko12', GetImgPath(myEnum.korean, 'Asset 18.png'));
+    imgSrcMap.set('ko13', GetImgPath(myEnum.korean, 'Asset 19.png'));
+    imgSrcMap.set('ko14', GetImgPath(myEnum.korean, 'Asset 39.png'));
+    imgSrcMap.set('ko15', GetImgPath(myEnum.korean, 'Asset 41.png'));
+    imgSrcMap.set('ko16', GetImgPath(myEnum.korean, 'Asset 42.png'));
+    imgSrcMap.set('en7', GetImgPath(myEnum.english,'Asset 89.png'));
+    imgSrcMap.set('en8', GetImgPath(myEnum.english,'Asset 90.png'));
+    imgSrcMap.set('en9', GetImgPath(myEnum.english,'Asset 91.png'));
+    imgSrcMap.set('en10', GetImgPath(myEnum.english,'Asset 92.png'));
+    imgSrcMap.set('en11', GetImgPath(myEnum.english,'Asset 93.png'));
+    imgSrcMap.set('en12', GetImgPath(myEnum.english,'Asset 94.png'));
+    imgSrcMap.set('en13', GetImgPath(myEnum.english,'Asset 95.png'));
+    imgSrcMap.set('en14', GetImgPath(myEnum.english,'Asset 96.png'));
+    imgSrcMap.set('en15', GetImgPath(myEnum.english,'Asset 97.png'));
+    imgSrcMap.set('en16', GetImgPath(myEnum.english,'Asset 98.png'));
+    // content4
+    
+    imgSrcMap.set('ko17', GetImgPath(myEnum.korean,'Asset 43.png'));
+    imgSrcMap.set('en17', GetImgPath(myEnum.english,'Asset 99.png'));
+
+    return imgSrcMap;
+}
+
+function GetImgPath(locale, imgName){
+    
+    if (locale == myEnum.korean){
+        return config.koImgPath+imgName;
+    } else {
+        return config.enImgPath+imgName;
+    }
+}
+
+    // const googleBtnImg = document.querySelector(".infoImg1");
+    // console.log(googleBtnImg.className);
+    // if (lang == "ko") {
+    //     console.log(1);
+    //     googleBtnImg.src = 'img/Asset 77.png';
+    // } else {
+    //     console.log(2);
+    //     googleBtnImg.src = 'img/Asset 78.png';
+    // }
+        
+}
+
+
