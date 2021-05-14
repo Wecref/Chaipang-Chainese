@@ -122,8 +122,8 @@ const lang = {
     }
 };
 // 초기 작업
-const currentLang = getLanguage();
-Render(currentLang.substr(0, 2));
+const currentLang = getLang();
+Render(currentLang);
 
 
 // 버튼 이벤트
@@ -136,6 +136,15 @@ Render(currentLang.substr(0, 2));
 function getLanguage() {
     return navigator.language || navigator.userLanguage;
 };
+
+function getLang() {
+    let currentLang = getLanguage().substr(0, 2);
+    if (currentLang != "ko"){
+        currentLang = "en";
+    }
+    console.log(currentLang);
+    return currentLang;
+}
 
 function Render(locale){
     TextRender(locale);
