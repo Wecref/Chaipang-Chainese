@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
 footer {
+    max-width: 1900px;
+    margin: 0px auto;
     font-family: "NanumSquare_acR";
     display: flex;
     flex-direction: column;
@@ -18,6 +20,7 @@ footer {
 .copyright{
     font-size: 17pt;
     margin: 5px 10px;
+    align-self: center;
 }
 .rule{
     display: flex;
@@ -25,13 +28,16 @@ footer {
 
     border-bottom: 1px #bcbcbc solid;
 
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 .rule>ul{
     display: flex;
     list-style: none;
     padding: 0px 0px;
     
+}
+.rule>ul img {
+    margin-bottom: -7px;
 }
 .rule>ul li{
     margin: 5px 10px;
@@ -41,46 +47,39 @@ footer {
     text-decoration: none;
     color: #999999;
 }
-
-
-.conpany_info2{
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
-    font-size: 17px;
-}
-.boss{
-    margin: 5px 10px;
-}
-.address{
+.conpany_info2 {
     display: flex;
     justify-content: space-between;
+    font-size: 15px;
+}
+.conpany_info2 > div {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px 0px 0px 0px;
 }
 
-.address>div:first-child{
-    margin-left: 10px;
+.conpany_info2 > div > div {
     display: flex;
-    align-items: center;
-}
-.address>div:first-child>span:first-child{
-    margin-right: 100px;
-}
-.address>div:last-child{
-    width: 40%;
-    margin-right: 10px;
-    display: flex;
-    align-items: center;
+    flex-direction: column;
+    margin: 20px;
 }
 
-.address>div:last-child>span{
-    flex-grow: 1;
+.start > span:first-child {
+    margin-bottom: 15px;
 }
-.address>div:last-child>img{    
+
+.middle > span:first-child {
+    margin-bottom: 15px;
+}
+.end > span:first-child {
+    margin-bottom: 15px;
+}
+
+.conpany_info2 > img {
     width: 252px;
     height: 61px;
-}
-
-.address>div>span>span:last-child{
-    font-size: 15px;
-    color: #b2b2b2;
+    align-self: center;
+    margin-top: 30px;
 }
