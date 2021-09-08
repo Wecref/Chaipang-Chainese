@@ -42,8 +42,9 @@
 .nav_container > .nav_menu > li > a {
     font-family: "NanumSquareB";
     text-decoration: none;
-    color: var(--color-white);
+    color: white;
     font-size: 20px;
+    
 }
 
 .nav_container .nav_toogleBtn {

@@ -16,8 +16,8 @@
 }
 
 .contents_container .info_layout {
-    font-family: "NanumSquare_acB";
-    color: var(--color-white);
+    font-family: "NanumSquareB";
+    color: white;
 
     display: flex;
     flex-direction: column;
@@ -84,7 +84,7 @@
 }
 
 .contents_container .info_deco_layout .deco_title .big_text{
-    font-family: "NanumSquare_acEB";
+    font-family: "NanumSquareEB";
     font-size: 65px;
     color: #5F1AA8;
     margin-bottom: 20px;
@@ -92,7 +92,7 @@
 }
 
 .contents_container .info_deco_layout .nomal_text{
-    font-family: "NanumSquare_acB";
+    font-family: "NanumSquareB";
     font-size: 30px;
     color: #B480FF;
     margin: 0px 0px;
