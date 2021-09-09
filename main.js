@@ -21,7 +21,7 @@ const config = {
     enImgPath: "img/en/"
 };
 
-const lang = {
+const langTable = {
     en: {
         title: "Chaipang Chinese",
         composition: "Features and composition",
@@ -148,6 +148,8 @@ function getLang() {
     }
     console.log(currentLang);
     return currentLang;
+
+    // return "en";
 }
 
 function Render(locale){
@@ -157,20 +159,22 @@ function Render(locale){
 
 function TextRender(locale) {
     const $lang = document.querySelectorAll("[data-lang]")
-    $lang.forEach(el => {
-        const code = el.dataset.lang
-        el.textContent = lang[locale][code]
-    });
+    
+    for (let i = 0; i < $lang.length; i++){
+        const code = $lang[i].dataset.lang;
+        $lang[i].textContent = langTable[locale][code];
+    }
 };
 
 function ImgRender(locale){
     const imgSrcMap = GetImgMap();
 
     const $img_num = document.querySelectorAll("[data-img]")
-    $img_num.forEach(el => {
-        el.src = imgSrcMap.get(locale+el.dataset.img);
-        console.log();
-    });
+
+    for (let i = 0; i < $img_num.length; i++){
+        $img_num[i].src = imgSrcMap.get(locale+$img_num[i].dataset.img);
+    }
+}
 
 function GetImgMap(){
     const imgSrcMap = new Map();
@@ -234,7 +238,5 @@ function GetImgPath(locale, imgName){
     //     console.log(2);
     //     googleBtnImg.src = 'img/Asset 78.png';
     // }
-        
-}
 
 
