@@ -1,24 +1,12 @@
 @charset "UTF-8";
-/* 변수 선언 */
 @import url(Css/variable.css);
-/* 폰트 선언 */
 @import url(Css/font.css);
-/* 네비게이션 파트*/
-@import url(Css/nav.css);
-/* 콘텐츠 컨테이너 */
-@import url(Css/contents.css);
-/* 배경 경계선 라인 파트 */
 @import url(Css/waveLine.css);
-/* 양옆 케릭터 디자인 파트 */
 @import url(Css/decoration.css);
-/* footer 파트 */
+@import url(Css/Body.css);
+@import url(Css/nav.css);
+@import url(Css/contents.css);
 @import url(Css/footer.css);
-
-/* 디폰트 설정 */
-html,
-body {
-    margin: 0px;
-}
 
 .focusColor1 {
     color: #FF80C7;
@@ -145,6 +133,10 @@ body {
         height: 40px;
     }
 
+    #content1.contents_container.active {
+        padding-top: 30%;
+    }
+
     .nav_container{
         flex-direction: column;
     }
@@ -190,10 +182,6 @@ body {
     .nav_container > .nav_menu > li:not(:last-child){
         margin-right: 0px;
         margin-bottom: 10px;
-    }
-
-    #content1.contents_container.active {
-        padding-top: 35%;
     }
     #content1 .info_texts .nomal_text {
         font-size: 20px;
@@ -301,6 +289,17 @@ body {
     }
 }
 
+@media screen and (max-width: 950px) {
+    #content1.contents_container.active {
+        padding-top: 50%;
+    }
+}
+@media screen and (max-width: 600px) {
+    #content1.contents_container.active {
+        padding-top: 80%;
+    }
+}
+
 @media screen and (max-width: 700px) {
     .waveLine_nomal {
         height: 20px;
@@ -343,9 +342,6 @@ body {
     
     #content1.contents_container {
         padding-top: 30%;
-    }
-    #content1.contents_container.active {
-        padding-top: 70%;
     }
     #content1 .info_layout {
         width: 100%;

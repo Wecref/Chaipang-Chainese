@@ -1,57 +1,86 @@
 @charset "UTF-8";
 
-.nav_container {
-    /* background-color: blueviolet; */
-
-    width: 100%;
-
-    max-width: 1900px;
-
+nav {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 
     position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0%);
-}
-
-.nav_container > .nav_logo {
-    width: 279px;
-    height: 74px;
-
-    margin: var(--nav-container-margin);
-}
-
-.nav_menu {
-    display: flex;
-    margin: 0px;
-    padding: 0px;
-
-    margin: var(--nav-container-margin);
-}
-
-.nav_container > .nav_menu > li {
-    list-style-type: none;
-    margin-top: 5px;
-}
-
-.nav_container > .nav_menu > li:not(:last-child){
-    margin-right: 63px;
-}
-
-.nav_container > .nav_menu > li > a {
+    width: 100%;
+    max-width: 1920px;
+    /* transform: translate(-50%, 0%); */
+    
     font-family: "NanumSquareB";
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
+}
+/**/
+nav div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav div:first-child .logo {
+    width: 17.5em;
+    height: auto;
+    max-width: 279px;
+    margin: var(--nav-container-margin)
+}
+nav div:first-child .menuIcon {
+    display: none;
+    margin: var(--nav-container-margin)
+}
+/**/
+nav div:last-child ul {
+    display: flex;
+    
+    padding: 0px;
+    margin: var(--nav-container-margin)
+}
+nav div:last-child li:not(:last-child){
+    margin-right: 3.94em;
+}
+nav div:last-child a {
+    color: #ffffff;
+    font-size: 1.25em;
+}
+/**/
+nav div:last-child ul.active {
+    display: flex;
+}
+/**/
+@media screen and (max-width: 1400px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav div:first-child {
+        width: 100%;
+    }
+    nav div:first-child .menuIcon {
+        display: flex;
+    }
+    nav div:last-child ul {
+        display: none;
+    }
+}
+@media screen and (max-width: 950px) {
+    nav {
+        font-size: .9em;
+    }
+    nav div:first-child .logo {
+        width: 12em;
+    }
+    nav div:last-child ul {
+        flex-direction: column;    
+        align-items: center;
+        margin: 2.313em 0em;
+    }
+    nav div:last-child li:not(:last-child) {
+        margin: 0em 0em .7em 0em;
+    }
     
 }
-
-.nav_container .nav_toogleBtn {
-    display: none;
-}
-
-.nav_menu_icon.active,
-.nav_menu.active {
-    display: flex;
+@media screen and (max-width: 460px) {
+    nav div:first-child {
+        font-size: .6em;
+    }
 }

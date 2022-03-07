@@ -1,0 +1,13 @@
+html,
+body {
+    background-color: white;
+    max-width: 1920px;
+    margin: 0 auto;
+    word-break: keep-all;
+}
+body ul {
+    list-style: none;
+}
+body a {
+    text-decoration: none;
+}
