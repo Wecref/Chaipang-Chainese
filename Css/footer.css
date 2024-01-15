@@ -1,86 +1,91 @@
 @charset "UTF-8";
 
 footer {
-    max-width: 1900px;
-    margin: 0px auto;
-    font-family: "NanumSquareR";
     display: flex;
     flex-direction: column;
-    align-content: center;
-    padding: 50px;
-    padding-top: 150px;
-    color: #999999
-}
-.conpany_info{
-    display: flex;
-    flex-direction: column;
+    align-items: center;
+    background-color: #E4E1FF;
 
-    font-size: 20px;
+    color: #ffffff;
 }
-.copyright{
-    font-size: 17pt;
-    margin: 5px 10px;
-    align-self: center;
-}
-.rule{
-    display: flex;
-    justify-content: space-between;
 
-    border-bottom: 1px #bcbcbc solid;
-
-    padding-bottom: 20px;
-}
-.rule>ul{
+footer .footer-links {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     list-style: none;
-    padding: 0px 0px;
-    
-}
-.rule>ul img {
-    margin-bottom: -7px;
-    margin-right: 1.5px;
-}
-.rule>ul li{
-    margin: 5px 10px;
+    padding: 0;
 }
 
-.rule>ul li a{
-    text-decoration: none;
-    color: #999999;
+footer .footer-links li:nth-child(2) {
+    margin: 0 1em;
 }
-.conpany_info2 {
+
+footer .footer-links li {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
 }
-.conpany_info2 > div {
-    width: 70%;
+
+footer .footer-links img {
+    max-width: 60px;
+    width: 2em;
+}
+
+footer .footer-info {
+    width: 100%;
+    background-color: #5F1AA8;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin: 30px 0px 0px 0px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1em 0em;
 }
 
-.conpany_info2 > div > div {
+footer .footer-info .info-list {
+    padding: 0;
+}
+
+footer .footer-info .info-list:nth-child(2) {
     display: flex;
     flex-direction: column;
-    margin: 20px;
-    font-size: 12px;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.start > span:first-child {
-    margin-bottom: 15px;
+footer .footer-info .info-list:nth-child(2) img {
+    max-width: 202px;
+    width: 9em;
 }
 
-.middle > span:first-child {
-    margin-bottom: 15px;
-}
-.end > span:first-child {
-    margin-bottom: 15px;
+@media screen and (max-width: 1868px) {
+    footer {
+        font-size: .9em;
+    }
 }
 
-.conpany_info2 > img {
-    width: 252px;
-    height: 61px;
-    align-self: center;
-    margin-top: 30px;
+@media screen and (max-width: 1685px) {
+    footer {
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-width: 902px) {
+    footer {
+        font-size: .7em;
+    }
+}
+
+@media screen and (max-width: 795px) {
+    footer .footer-info {
+        font-size: 1.3em;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    footer .footer-info {
+        font-size: 1em;
+    }
 }

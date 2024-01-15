@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+.contents-card.friends {
+    background-image: url("../resources/img/deco/darkturquoiseWallpaper01.png");
+    margin: -1em 0;
+    padding: 5em 0;
+}
+
+.contents-card.friends .main .titleStar h1 {
+    color: white;
+}
+
+.contents-card.friends .main .description {
+    margin-top: 2em;
+}
+
+.contents-card.friends .main .promotion {
+    margin-top: 5em;
+}
+
+.contents-card.friends .main .promotion img {
+    max-width: 1390px;
+    width: 46.5em;
+}
+
+@media screen and (max-width: 854px) {
+    .contents-card.friends .main .promotion img {
+        width: 40em;
+    }
+
+    .contents-card.friends .main .titleStar h1 br {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contents-card.friends .main .promotion img {
+        width: 35em;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .contents-card.friends .main .promotion img {
+        width: 28em;
+    }
+}
