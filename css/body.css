@@ -43,6 +43,12 @@ body p {
     background-image: url("../resources/img/deco/indigoHill.png");
 }
 
+.waveDeco.rotate180 {
+    transform: rotate(180deg);
+    margin-bottom: -1.5em;
+    margin-top: 5em;
+}
+
 .indigoTxt {
     color: #5F1AA8;
 }

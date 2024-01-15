@@ -4,7 +4,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #E4E1FF;
+    background-color: #8e2fea;
 
     color: #ffffff;
 }
@@ -14,7 +14,7 @@ footer .footer-links {
     justify-content: center;
     flex-wrap: wrap;
     list-style: none;
-    padding: 0;
+    padding: 1.5em 0 0 0;
 }
 
 footer .footer-links li:nth-child(2) {
@@ -30,11 +30,12 @@ footer .footer-links li {
 footer .footer-links img {
     max-width: 60px;
     width: 2em;
+    filter: opacity(0.5) drop-shadow(0 0 0 #a56cff);
 }
 
 footer .footer-info {
     width: 100%;
-    background-color: #5F1AA8;
+    background-color: #8100e1;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
