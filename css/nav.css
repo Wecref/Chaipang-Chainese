@@ -130,6 +130,12 @@ nav {
     color: #1ec8c8;
 }
 
+@media screen and (max-width: 1701px) {
+    nav {
+        font-size: .9em;
+    }
+}
+
 @media screen and (max-width: 928px) {
     nav {
         flex-direction: column;
